@@ -22,6 +22,10 @@
         .manrope-font{
             font-family: 'Manrope', sans-serif;
         }
+        .custom-text-color {
+          color: rgba(19, 19, 24, 0.60);
+        }
+
     </style>
 
     <!-- --------custom colour-------- -->
@@ -33,6 +37,9 @@
                 clifford: '#da373d',
                 'primary-color': '#FF4240',
                 'heading-color': '#131318',
+                'second-color': '#49D293',
+                'third-color': '#FFB546',
+                'fourth-color': '#4C8DF1',
               }
             }
           }
@@ -43,7 +50,7 @@
 </head>
 <body class="manrope-font px-5">
     <!-- =================header================= -->
-    <header class="container mx-auto mt-12">
+    <header class="container mx-auto mt-8 lg:mt-12">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -77,7 +84,7 @@
     </header>
     <main class="container mx-auto">
       <!-- =================banner start================= -->
-      <div class="mt-16 rounded-2xl lg:relative ">
+      <div class="mt-10 lg:mt-16 rounded-2xl lg:relative ">
         <div class="carousel w-full mb-4">
           <div id="slide1" class="h-[60vh] carousel-item relative w-full bg-[linear-gradient(45deg,rgba(169,169,169,0.4),rgba(169,169,169,0.1)),url(./Images/1.png)] bg-no-repeat bg-cover">
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -106,12 +113,41 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#131318] rounded-2xl p-8 w-full lg:w-5/12 lg:absolute lg:bottom-9 lg:right-8">
+        <div class="bg-[#131318] rounded-2xl p-4 lg:p-8 w-full lg:w-5/12 lg:absolute lg:bottom-9 lg:right-8">
           <h4 class="pb-3 text-lg lg:text-2xl font-semibold lg:font-extrabold text-white">Meet all the heroes from the field</h4>
           <p class="pb-1 text-[#FFFFFF99] text-sm lg:text-base font-normal lg:font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
       </div>
       <!-- =================banner end================= -->
+
+      <!-- =================professional hockey club start================= -->
+      <div class="text-center mt-20 lg:mt-32">
+        <h3 class="mb-6 text-2xl lg:text-4xl font-extrabold text-heading-color">Professional Hockey Club</h3>
+        <p class="mb-8 custom-text-color text-sm lg:text-base font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 px-6 mt-13">
+          <div>
+            <div class="radial-progress text-primary-color" style="--value:87;" role="progressbar">87%</div>
+            <h4 class="text-xl font-semibold my-4">Prayer Facility</h4>
+            <p class="text-base font-normal custom-text-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-second-color" style="--value:95;" role="progressbar">95%</div>
+            <h4 class="text-xl font-semibold my-4">Experienced Coach</h4>
+            <p class="text-base font-normal custom-text-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-third-color" style="--value:90;" role="progressbar">90%</div>
+            <h4 class="text-xl font-semibold my-4">Senior Player</h4>
+            <p class="text-base font-normal custom-text-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-fourth-color" style="--value:80;" role="progressbar">80%</div>
+            <h4 class="text-xl font-semibold my-4">Training Ground</h4>
+            <p class="text-base font-normal custom-text-color">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+      </div>
+      <!-- =================professional hockey club end================= -->
 
     </main>
     <footer>
